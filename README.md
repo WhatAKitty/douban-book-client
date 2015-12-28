@@ -1,2 +1,2 @@
 # douban-client
-Node.js client for douban.
+Node.js client for douban book.
