@@ -1,5 +1,5 @@
 {
-  "name": "twode",
+  "name": "douban-book-client",
   "version": "0.2.0",
   "description": "Douban REST client API for node.js.",
   "keywords": ["douban" ,"oauth"],
