@@ -9,6 +9,7 @@ var douban = new Douban({
 
 describe("Douban book API", function() {
     it("Douban search book", function(done) {
+        this.timeout(5000);
         douban.search({
                 q: "香港基本法的成功实践",
             start: 0,
@@ -19,12 +20,14 @@ describe("Douban book API", function() {
         });
     });
     it("Douban search book by ISBN", function(done) {
+       this.timeout(5000);
        douban.searchByIsbn("7301045700", function(err, data) {
            data.id.should.not.be.empty;
            done();
        });
     });
     it("Douban get book info", function(done) {
+        this.timeout(5000);
         douban.info(1259108, function(err, data) {
             data.id.should.not.be.empty;
             done();
