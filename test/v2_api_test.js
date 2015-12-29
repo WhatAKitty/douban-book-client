@@ -24,4 +24,16 @@ describe("Douban book API", function() {
            done();
        });
     });
+    it("Douban get book info", function(done) {
+        douban.info(1259108, function(err, data) {
+            data.id.should.not.be.empty;
+            done();
+        });
+    });
+    it("Douban get book tags", function(done) {
+        douban.tags(1259108, function(err, data) {
+           data.tags[0].name.should.not.be.empty;
+           done(); 
+        });
+    });
 });

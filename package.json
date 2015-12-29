@@ -1,6 +1,6 @@
 { 
   "name": "twode", 
-  "version": "0.0.1",
+  "version": "0.2",
   "description": "Douban REST client API for node.js.", 
   "keywords": ["douban","oauth"], 
   "homepage": "https://github.com/WhatAKitty/douban-client", 
