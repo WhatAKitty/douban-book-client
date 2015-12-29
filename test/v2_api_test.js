@@ -10,16 +10,18 @@ var douban = new Douban({
 describe("Douban book API", function() {
     it("Douban search book", function(done) {
         douban.search({
-            q: "3065",
+                q: "香港基本法的成功实践",
             start: 0,
             count: 5
         }, function(err, data) {
-           if (err) {
-               console.error(err);
-           } else {
-               console.log(data);
-           }
+           data.books[0].id.should.not.be.empty;
            done();
         });
-    })
+    });
+    it("Douban search book by ISBN", function(done) {
+       douban.searchByIsbn("7301045700", function(err, data) {
+           data.id.should.not.be.empty;
+           done();
+       });
+    });
 });
