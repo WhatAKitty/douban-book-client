@@ -1,6 +1,6 @@
 {
   "name": "douban-book-client",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Douban REST client API for node.js.",
   "keywords": ["douban" ,"oauth"],
   "homepage": "https://github.com/WhatAKitty/douban-client",
