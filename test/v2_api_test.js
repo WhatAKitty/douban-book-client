@@ -28,14 +28,14 @@ describe("Douban book API", function() {
     });
     it("Douban get book info", function(done) {
         this.timeout(5000);
-        douban.info(1259108, function(err, data) {
+        douban.info(5363928, function(err, data) {
             data.id.should.not.be.empty;
             done();
         });
     });
     it("Douban get book tags", function(done) {
         this.timeout(5000);
-        douban.tags(1259108, function(err, data) {
+        douban.tags(5363928, function(err, data) {
            data.tags[0].name.should.not.be.empty;
            done(); 
         });
